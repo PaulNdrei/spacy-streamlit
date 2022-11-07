@@ -202,6 +202,7 @@ def visualize_ner(
     title: Optional[str] = "Named Entities",
     title_markdown: Optional[str] = None,
     expander_text: Optional[str] = "Select entity labels",
+    expander_open: bool = False,
     entity_labels_text: Optional[str] = "Entity labels",
     colors: Dict[str, str] = {},
     key: Optional[str] = None,
@@ -251,7 +252,7 @@ def visualize_ner(
     if not labels:
         st.warning("The parameter 'labels' should not be empty or None.")
     else:
-        exp = st.expander(expander_text)
+        exp = st.expander(expander_text, expanded=expander_open)
         label_select = exp.multiselect(
             entity_labels_text,
             options=labels,
