@@ -200,7 +200,7 @@ def visualize_ner(
     attrs: List[str] = NER_ATTRS,
     show_table: bool = True,
     title: Optional[str] = "Named Entities",
-    title_markdown: Optional[str],
+    title_markdown: Optional[str] = None,
     expander_text: Optional[str] = "Select entity labels",
     entity_labels_text: Optional[str] = "Entity labels",
     colors: Dict[str, str] = {},
