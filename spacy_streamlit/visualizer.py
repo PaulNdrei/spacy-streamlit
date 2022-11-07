@@ -200,6 +200,9 @@ def visualize_ner(
     attrs: List[str] = NER_ATTRS,
     show_table: bool = True,
     title: Optional[str] = "Named Entities",
+    title_markdown: Optional[str],
+    expander_text: Optional[str] = "Select entity labels",
+    entity_labels_text: Optional[str] = "Entity labels",
     colors: Dict[str, str] = {},
     key: Optional[str] = None,
     manual: bool = False,
@@ -228,8 +231,10 @@ def visualize_ner(
     if colors:
         displacy_options["colors"] = colors
 
-    if title:
+    if not title_markdown:
         st.header(title)
+    elif title_markdown:
+        st.markdown(title_markdown)
 
     if manual:
         if show_table:
@@ -246,9 +251,9 @@ def visualize_ner(
     if not labels:
         st.warning("The parameter 'labels' should not be empty or None.")
     else:
-        exp = st.expander("Select entity labels")
+        exp = st.expander(expander_text)
         label_select = exp.multiselect(
-            "Entity labels",
+            entity_labels_text,
             options=labels,
             default=list(labels),
             key=f"{key}_ner_label_select",
