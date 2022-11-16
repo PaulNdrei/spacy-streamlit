@@ -19,7 +19,7 @@ vectors, token attributes, and more.
 You can install `spacy-streamlit` from pip:
 
 ```bash
-pip install spacy-streamlit
+pip install git+https://github.com/TeMU-BSC/spacy-streamlit.git
 ```
 
 The package includes **building blocks** that call into Streamlit and set up all
