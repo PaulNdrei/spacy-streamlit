@@ -44,11 +44,11 @@ def visualize(
 ) -> None:
     """Embed the full visualizer with selected components."""
 
-    if st.config.get_option("theme.primaryColor") != color:
-        st.config.set_option("theme.primaryColor", color)
-
-        # Necessary to apply theming
-        st.experimental_rerun()
+    # if st.config.get_option("theme.primaryColor") != color:
+    #     st.config.set_option("theme.primaryColor", color)
+    #
+    #     # Necessary to apply theming
+    #     st.experimental_rerun()
 
     if show_logo:
         st.sidebar.markdown(LOGO, unsafe_allow_html=True)
@@ -127,10 +127,10 @@ def visualize(
             config_exp = st.expander("Pipeline config.cfg")
             config_exp.code(nlp.config.to_str())
 
-    st.sidebar.markdown(
-        FOOTER,
-        unsafe_allow_html=True,
-    )
+    # st.sidebar.markdown(
+    #     FOOTER,
+    #     unsafe_allow_html=True,
+    # )
 
 
 def visualize_parser(
