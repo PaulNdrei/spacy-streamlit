@@ -38,6 +38,9 @@ def visualize(
     sidebar_title: Optional[str] = None,
     sidebar_description: Optional[str] = None,
     show_logo: bool = True,
+    ner_expander_text: Optional[str] = "Select entity labels",
+    ner_expander_open: bool = False,
+    ner_entity_labels_text: Optional[str] = "Entity labels",
     color: Optional[str] = "#09A3D5",
     key: Optional[str] = None,
     get_default_text: Callable[[Language], str] = None,
@@ -105,7 +108,7 @@ def visualize(
         visualize_parser(doc, key=key)
     if "ner" in visualizers and "ner" in active_visualizers:
         ner_labels = ner_labels or nlp.get_pipe("ner").labels
-        visualize_ner(doc, labels=ner_labels, attrs=ner_attrs, key=key)
+        visualize_ner(doc, labels=ner_labels, attrs=ner_attrs, key=key, expander_text=ner_expander_text, entity_labels_text=ner_entity_labels_text, expander_open=ner_expander_open)
     if "textcat" in visualizers and "textcat" in active_visualizers:
         visualize_textcat(doc)
     if "similarity" in visualizers and "similarity" in active_visualizers:
