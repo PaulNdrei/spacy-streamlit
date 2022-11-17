@@ -352,6 +352,7 @@ def visualize_textcat(
         st.header(title)
     st.markdown(f"> {doc.text}")
     df = pd.DataFrame(doc.cats.items(), columns=("Label", "Score"))
+    df.sort_values(by=["Score"], axis=0, ascending=False,inplace=True)
     st.dataframe(df)
 
 
