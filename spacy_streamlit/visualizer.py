@@ -160,7 +160,7 @@ def visualize_parser(
     if displacy_options is None:
         displacy_options = dict()
     if title:
-        st.header(title)
+        st.markdown(f"##### {title}")
     if manual:
         # In manual mode, collapse_phrases and collapse_punct are passed as options to
         # displacy.parse_deps(doc) and the resulting data is retokenized to be correct,
@@ -207,7 +207,6 @@ def visualize_ner(
     attrs: List[str] = NER_ATTRS,
     show_table: bool = True,
     title: Optional[str] = _("Named Entities"),
-    title_markdown: Optional[str] = None,
     expander_text: Optional[str] = _("Select entity labels"),
     expander_open: bool = False,
     entity_labels_text: Optional[str] = _("Entity labels"),
@@ -239,10 +238,8 @@ def visualize_ner(
     if colors:
         displacy_options["colors"] = colors
 
-    if not title_markdown:
-        st.header(title)
-    elif title_markdown:
-        st.markdown(title_markdown)
+    if title:
+        st.markdown(f"##### {title}")
 
     if manual:
         if show_table:
@@ -319,7 +316,7 @@ def visualize_spans(
     displacy_options["spans_key"] = spans_key
 
     if title:
-        st.header(title)
+        st.markdown(f"##### {title}")
 
     if manual:
         if show_table:
@@ -353,7 +350,7 @@ def visualize_textcat(
 ) -> None:
     """Visualizer for text categories."""
     if title:
-        st.header(title)
+        st.markdown(f"##### {title}")
     st.markdown(f"> {doc.text}")
     df = pd.DataFrame(doc.cats.items(), columns=("Label", "Score"))
     df.sort_values(by=["Score"], axis=0, ascending=False,inplace=True)
@@ -371,7 +368,7 @@ def visualize_similarity(
     """Visualizer for semantic similarity using word vectors."""
     meta = nlp.meta.get("vectors", {})
     if title:
-        st.header(title)
+        st.markdown(f"##### {title}")
     if not meta.get("width", 0):
         st.warning(_("No vectors available in the model."))
     else:
@@ -404,7 +401,7 @@ def visualize_tokens(
 ) -> None:
     """Visualizer for token attributes."""
     if title:
-        st.header(title)
+        st.markdown(f"##### {title}")
     exp = st.expander(_("Select token attributes"))
     selected = exp.multiselect(
         _("Token attributes"),
