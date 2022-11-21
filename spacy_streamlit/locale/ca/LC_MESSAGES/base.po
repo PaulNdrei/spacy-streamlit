@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2022-11-18 18:11+0100\n"
-"PO-Revision-Date: 2022-11-21 13:01+0100\n"
+"PO-Revision-Date: 2022-11-21 14:18+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ca\n"
@@ -70,11 +70,11 @@ msgstr "Entitats nombrades"
 
 #: spacy_streamlit/visualizer.py:250 spacy_streamlit/visualizer.py:327
 msgid "When the parameter 'manual' is set to True, the parameter 'show_table' must be set to False."
-msgstr "Quan el paràmetre 'manual' està establert com a True, cal establir com a False el paràmetre 'show_table'."
+msgstr ""
 
 #: spacy_streamlit/visualizer.py:254
 msgid "When the parameter 'manual' is set to True, the parameter 'doc' must be of type 'list', not 'spacy.tokens.Doc'."
-msgstr "Quan el paràmetre 'manual' està establert com a True, el paràmatre 'doc' ha de ser de tipus 'list', no 'spacy.tokens.Doc'."
+msgstr ""
 
 #: spacy_streamlit/visualizer.py:260
 msgid "The parameter 'labels' should not be empty or None."
@@ -82,7 +82,7 @@ msgstr "El paràmetre 'labels' no hauria d'estar buit ni ser None."
 
 #: spacy_streamlit/visualizer.py:331
 msgid "When the parameter 'manual' is set to True, the parameter 'doc' must be of type 'Dict', not 'spacy.tokens.Doc'."
-msgstr "Quan el paràmetre 'manual' està establert com a True, el paràmatre 'doc' ha de ser de tipus 'Dict', no 'spacy.tokens.Doc'."
+msgstr ""
 
 #: spacy_streamlit/visualizer.py:352
 msgid "Text Classification"

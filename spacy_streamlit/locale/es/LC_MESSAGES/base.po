@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2022-11-18 18:11+0100\n"
-"PO-Revision-Date: 2022-11-21 12:12+0100\n"
+"PO-Revision-Date: 2022-11-21 14:18+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
@@ -94,7 +94,7 @@ msgstr "Vectores y Similitud"
 
 #: spacy_streamlit/visualizer.py:375
 msgid "No vectors available in the model."
-msgstr "No hay vectores disponibles para este modelo"
+msgstr "No hay vectores disponibles para este modelo."
 
 #: spacy_streamlit/visualizer.py:379
 msgid "Text or word 1"
