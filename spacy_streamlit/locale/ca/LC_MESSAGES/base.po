@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-11-18 18:11+0100\n"
+"PO-Revision-Date: 2022-11-21 14:18+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 3.2.1\n"
+
+#: spacy_streamlit/visualizer.py:25
+msgid "Built with"
+msgstr "Creat amb"
+
+#: spacy_streamlit/visualizer.py:210
+msgid "Select entity labels"
+msgstr "Selecciona les etiquetes de les entitats"
+
+#: spacy_streamlit/visualizer.py:212
+msgid "Entity labels"
+msgstr "Etiquetes de les entitats"
+
+#: spacy_streamlit/visualizer.py:86
+msgid "Loading model"
+msgstr "Carregant el model"
+
+#: spacy_streamlit/visualizer.py:91
+msgid "Pipeline info"
+msgstr "Informació de la cadena de processament"
+
+#: spacy_streamlit/visualizer.py:108
+msgid "Text to analyze"
+msgstr "Text per analitzar"
+
+#: spacy_streamlit/visualizer.py:124
+msgid "Pipeline information"
+msgstr "Informació de la cadena de processament"
+
+#: spacy_streamlit/visualizer.py:146
+msgid "Dependency Parse & Part-of-speech tags"
+msgstr "Anàlisi de dependències i categoria gramatical"
+
+#: spacy_streamlit/visualizer.py:171 spacy_streamlit/visualizer.py:185
+msgid "Compact mode"
+msgstr "Mode compacte"
+
+#: spacy_streamlit/visualizer.py:176
+msgid "Split sentences"
+msgstr "Separa les frases"
+
+#: spacy_streamlit/visualizer.py:180
+msgid "Collapse punct"
+msgstr "Col·lapsa la puntuació"
+
+#: spacy_streamlit/visualizer.py:183
+msgid "Collapse phrases"
+msgstr "Col·lapsa les frases"
+
+#: spacy_streamlit/visualizer.py:209
+msgid "Named Entities"
+msgstr "Entitats nombrades"
+
+#: spacy_streamlit/visualizer.py:250 spacy_streamlit/visualizer.py:327
+msgid "When the parameter 'manual' is set to True, the parameter 'show_table' must be set to False."
+msgstr ""
+
+#: spacy_streamlit/visualizer.py:254
+msgid "When the parameter 'manual' is set to True, the parameter 'doc' must be of type 'list', not 'spacy.tokens.Doc'."
+msgstr ""
+
+#: spacy_streamlit/visualizer.py:260
+msgid "The parameter 'labels' should not be empty or None."
+msgstr "El paràmetre 'labels' no hauria d'estar buit ni ser None."
+
+#: spacy_streamlit/visualizer.py:331
+msgid "When the parameter 'manual' is set to True, the parameter 'doc' must be of type 'Dict', not 'spacy.tokens.Doc'."
+msgstr ""
+
+#: spacy_streamlit/visualizer.py:352
+msgid "Text Classification"
+msgstr "Classificació de textos"
+
+#: spacy_streamlit/visualizer.py:367
+msgid "Vectors & Similarity"
+msgstr "Vectors i similitut"
+
+#: spacy_streamlit/visualizer.py:375
+msgid "No vectors available in the model."
+msgstr "El model no té vectors disponibles."
+
+#: spacy_streamlit/visualizer.py:379
+msgid "Text or word 1"
+msgstr "Text o paraula 1"
+
+#: spacy_streamlit/visualizer.py:382
+msgid "Text or word 2"
+msgstr "Text o paraula 2"
+
+#: spacy_streamlit/visualizer.py:387
+msgid "Score"
+msgstr "Puntuació"
+
+#: spacy_streamlit/visualizer.py:393
+msgid "Vector information"
+msgstr "Informació del vector"
+
+#: spacy_streamlit/visualizer.py:401 spacy_streamlit/visualizer.py:409
+msgid "Token attributes"
+msgstr "Atributs lèxics"
+
+#: spacy_streamlit/visualizer.py:407
+msgid "Select token attributes"
+msgstr "Selecciona els atributs dels tokens"
