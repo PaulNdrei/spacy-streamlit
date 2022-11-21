@@ -20,11 +20,11 @@ msgstr ""
 msgid "Built with"
 msgstr "Creado con"
 
-#: spacy_streamlit/visualizer.py:45 spacy_streamlit/visualizer.py:211
+#: spacy_streamlit/visualizer.py:210
 msgid "Select entity labels"
 msgstr "Selecciona las etiquetas de entidades"
 
-#: spacy_streamlit/visualizer.py:47 spacy_streamlit/visualizer.py:213
+#: spacy_streamlit/visualizer.py:212
 msgid "Entity labels"
 msgstr "Etiquetas de entidades"
 
