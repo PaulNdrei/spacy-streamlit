@@ -1,4 +1,5 @@
 import gettext
+from pathlib import Path
 from typing import List, Sequence, Tuple, Optional, Dict, Union, Callable
 import streamlit as st
 import spacy
@@ -8,7 +9,7 @@ import pandas as pd
 
 from .util import load_model, process_text, get_svg, get_html, LOGO
 
-language = gettext.translation('base', "spacy_streamlit/locale")
+language = gettext.translation('base', Path(__file__).resolve().parent / "locale")
 language.install()
 _ = language.gettext
 
