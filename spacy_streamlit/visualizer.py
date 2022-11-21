@@ -121,7 +121,7 @@ def visualize(
         visualize_tokens(doc, attrs=token_attrs, key=key)
 
     if show_json_doc or show_meta or show_config:
-        st.markdown(f'{_("Pipeline information")}')
+        st.markdown(f'##### {_("Pipeline information")}')
         if show_json_doc:
             json_doc_exp = st.expander("JSON Doc")
             json_doc_exp.json(doc.to_json())
