@@ -88,7 +88,7 @@ def visualize(
     model_load_state.empty()
 
     if show_pipeline_info:
-        st.sidebar.subheader(_("Pipeline info"))
+        st.sidebar.markdown(f'##### {_("Pipeline info")}')
         desc = f"""<p style="font-size: 0.85em; line-height: 1.5"><strong>{spacy_model}:</strong> <code>v{nlp.meta['version']}</code>. {nlp.meta.get("description", "")}</p>"""
         st.sidebar.markdown(desc, unsafe_allow_html=True)
 
