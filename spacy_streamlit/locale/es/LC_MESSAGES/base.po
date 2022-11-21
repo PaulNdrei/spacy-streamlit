@@ -38,7 +38,7 @@ msgstr "Información de la cadena de procesamiento"
 
 #: spacy_streamlit/visualizer.py:108
 msgid "Text to analyze"
-msgstr ""
+msgstr "Texto a analizar"
 
 #: spacy_streamlit/visualizer.py:124
 msgid "Pipeline information"
@@ -78,7 +78,7 @@ msgstr ""
 
 #: spacy_streamlit/visualizer.py:260
 msgid "The parameter 'labels' should not be empty or None."
-msgstr ""
+msgstr "El parámetro 'etiquetas' no debe estar vacío o ser None."
 
 #: spacy_streamlit/visualizer.py:331
 msgid "When the parameter 'manual' is set to True, the parameter 'doc' must be of type 'Dict', not 'spacy.tokens.Doc'."
@@ -94,7 +94,7 @@ msgstr "Vectores y Similitud"
 
 #: spacy_streamlit/visualizer.py:375
 msgid "No vectors available in the model."
-msgstr ""
+msgstr "No hay vectores disponibles para este modelo"
 
 #: spacy_streamlit/visualizer.py:379
 msgid "Text or word 1"
@@ -106,11 +106,11 @@ msgstr "Texto o palabra 2"
 
 #: spacy_streamlit/visualizer.py:387
 msgid "Score"
-msgstr ""
+msgstr "Puntuación"
 
 #: spacy_streamlit/visualizer.py:393
 msgid "Vector information"
-msgstr ""
+msgstr "Información vectorial"
 
 #: spacy_streamlit/visualizer.py:401 spacy_streamlit/visualizer.py:409
 msgid "Token attributes"
@@ -118,4 +118,4 @@ msgstr "Atributos léxicos"
 
 #: spacy_streamlit/visualizer.py:407
 msgid "Select token attributes"
-msgstr ""
+msgstr "Seleccione los atributos léxicos"
