@@ -108,17 +108,17 @@ def visualize(
     text = st.text_area(_("Text to analyze"), default_text, key=f"{key}_visualize_text")
     doc = process_text(spacy_model, text)
 
-    if "parser" in visualizers and "parser" in active_visualizers:
-        visualize_parser(doc, key=key)
     if "ner" in visualizers and "ner" in active_visualizers:
         ner_labels = ner_labels or nlp.get_pipe("ner").labels
         visualize_ner(doc, labels=ner_labels, attrs=ner_attrs, key=key, expander_open=ner_expander_open)
     if "textcat" in visualizers and "textcat" in active_visualizers:
         visualize_textcat(doc)
-    if "similarity" in visualizers and "similarity" in active_visualizers:
-        visualize_similarity(nlp, default_texts=similarity_texts, key=key)
     if "tokens" in visualizers and "tokens" in active_visualizers:
         visualize_tokens(doc, attrs=token_attrs, key=key)
+    if "parser" in visualizers and "parser" in active_visualizers:
+        visualize_parser(doc, key=key)
+    if "similarity" in visualizers and "similarity" in active_visualizers:
+        visualize_similarity(nlp, default_texts=similarity_texts, key=key)
 
     if show_json_doc or show_meta or show_config:
         st.markdown(f'##### {_("Pipeline information")}')
