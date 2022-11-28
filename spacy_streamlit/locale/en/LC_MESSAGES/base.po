@@ -39,6 +39,10 @@ msgstr ""
 msgid "Text to analyze"
 msgstr ""
 
+#: spacy_streamlit/visualizer.py:117
+msgid "NER not available for this model. Please uncheck the NER visualizer in the left column to hide this message."
+msgstr ""
+
 #: spacy_streamlit/visualizer.py:124
 msgid "Pipeline information"
 msgstr ""

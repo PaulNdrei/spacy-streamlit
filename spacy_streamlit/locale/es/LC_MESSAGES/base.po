@@ -40,6 +40,10 @@ msgstr "Información de la cadena de procesamiento"
 msgid "Text to analyze"
 msgstr "Texto a analizar"
 
+#: spacy_streamlit/visualizer.py:117
+msgid "NER not available for this model. Please uncheck the NER visualizer in the left column to hide this message."
+msgstr "NER no disponible en este modelo. Por favor retire el visualizador NER en la columna de la izquierda para ocultar este mensaje."
+
 #: spacy_streamlit/visualizer.py:124
 msgid "Pipeline information"
 msgstr "Información de la cadena de procesamiento"

@@ -7,7 +7,7 @@ from spacy.language import Language
 from spacy import displacy
 import pandas as pd
 
-from .util import load_model, process_text, get_svg, get_html, LOGO
+from .util import load_model, process_text, get_svg, get_html, Demotype, get_logo
 
 language = gettext.translation('base', Path(__file__).resolve().parent / "locale")
 language.install()
@@ -44,6 +44,7 @@ def visualize(
     sidebar_title: Optional[str] = None,
     sidebar_description: Optional[str] = None,
     show_logo: bool = True,
+    demo_type: Optional[Demotype] = None,
     ner_expander_open: bool = False,
     color: Optional[str] = "#09A3D5",
     key: Optional[str] = None,
@@ -58,7 +59,7 @@ def visualize(
     #     st.experimental_rerun()
 
     if show_logo:
-        st.sidebar.markdown(LOGO, unsafe_allow_html=True)
+        st.sidebar.markdown(get_logo(demo_type), unsafe_allow_html=True)
     if sidebar_title:
         st.sidebar.markdown(f'## {sidebar_title}')
     if sidebar_description:
@@ -109,8 +110,11 @@ def visualize(
     doc = process_text(spacy_model, text)
 
     if "ner" in visualizers and "ner" in active_visualizers:
-        ner_labels = ner_labels or nlp.get_pipe("ner").labels
-        visualize_ner(doc, labels=ner_labels, attrs=ner_attrs, key=key, expander_open=ner_expander_open)
+        try:
+            ner_labels = ner_labels or nlp.get_pipe("ner").labels
+            visualize_ner(doc, labels=ner_labels, attrs=ner_attrs, key=key, expander_open=ner_expander_open)
+        except KeyError:
+            st.error(_("NER not available for this model. Please uncheck the NER visualizer in the left column to hide this message."), icon="⚠")
     if "textcat" in visualizers and "textcat" in active_visualizers:
         visualize_textcat(doc)
     if "tokens" in visualizers and "tokens" in active_visualizers:
