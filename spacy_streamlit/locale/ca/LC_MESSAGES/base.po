@@ -42,7 +42,7 @@ msgstr "Text per analitzar"
 
 #: spacy_streamlit/visualizer.py:117
 msgid "NER not available for this model. Please uncheck the NER visualizer in the left column to hide this message."
-msgstr "NER no disponible en aquest model. Si us plau, traieu el visualitzador NER a la columna de l'esquerra per amagar aquest missatge."
+msgstr "Aquest model no té reconeixement d'entitats (NER). Retireu el visualitzador de NER de la columna de l'esquerra per amagar aquest missatge."
 
 #: spacy_streamlit/visualizer.py:124
 msgid "Pipeline information"
