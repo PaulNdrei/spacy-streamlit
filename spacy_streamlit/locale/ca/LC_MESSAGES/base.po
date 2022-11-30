@@ -36,6 +36,10 @@ msgstr "Carregant el model"
 msgid "Pipeline info"
 msgstr "Informació de la cadena de processament"
 
+#: spacy_streamlit/visualizer.py:106
+msgid "How to use spacy"
+msgstr "Com fer servir spacy"
+
 #: spacy_streamlit/visualizer.py:108
 msgid "Text to analyze"
 msgstr "Text per analitzar"

@@ -103,6 +103,8 @@ def visualize(
     else:
         active_visualizers = visualizers
 
+    st.sidebar.write(f"[{_('How to use spacy')}](https://raw.githubusercontent.com/explosion/assets/main/spaCy/spaCy-cheat-sheet.pdf)")
+
     default_text = (
         get_default_text(nlp) if get_default_text is not None else default_text
     )

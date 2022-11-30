@@ -35,6 +35,10 @@ msgstr ""
 msgid "Pipeline info"
 msgstr ""
 
+#: spacy_streamlit/visualizer.py:106
+msgid "How to use spacy"
+msgstr ""
+
 #: spacy_streamlit/visualizer.py:108
 msgid "Text to analyze"
 msgstr ""
