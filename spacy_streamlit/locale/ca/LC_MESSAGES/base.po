@@ -98,7 +98,7 @@ msgstr "Classificació de textos"
 
 #: spacy_streamlit/visualizer.py:367
 msgid "Vectors & Similarity"
-msgstr "Vectors i similitut"
+msgstr "Vectors i similitud"
 
 #: spacy_streamlit/visualizer.py:375
 msgid "No vectors available in the model."
