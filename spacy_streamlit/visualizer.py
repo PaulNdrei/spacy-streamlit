@@ -12,6 +12,7 @@ from .util import load_model, process_text, get_svg, get_html, Demotype, get_log
 language = gettext.translation('base', Path(__file__).resolve().parent / "locale")
 language.install()
 _ = language.gettext
+ngettext = language.ngettext
 
 SPACY_VERSION = tuple(map(int, spacy.__version__.split(".")))
 
@@ -39,6 +40,8 @@ def visualize(
     show_json_doc: bool = True,
     show_meta: bool = True,
     show_config: bool = True,
+    show_models_download_links: bool = True,
+    models_download_name_links: Optional[List] = None,
     show_visualizer_select: bool = False,
     show_pipeline_info: bool = True,
     sidebar_title: Optional[str] = None,
@@ -78,12 +81,19 @@ def visualize(
         else 0
     )
     spacy_model = st.sidebar.selectbox(
-        "Model",
+        _("Model"),
         model_names,
         index=default_model_index,
         key=f"{key}_visualize_models",
         format_func=format_func,
     )
+
+    if show_models_download_links and models_download_name_links is not None:
+        for model_download in models_download_name_links:
+            model_name = model_download["name"]
+            model_link = model_download["link"]
+            st.sidebar.write(f"[{_('Download the {} model').format(model_name)}]({model_link})")
+
     model_load_state = st.info(f"{_('Loading model')} '{spacy_model}'...")
     nlp = load_model(spacy_model)
     model_load_state.empty()

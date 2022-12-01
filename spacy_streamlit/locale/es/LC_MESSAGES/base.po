@@ -28,6 +28,10 @@ msgstr "Selecciona las etiquetas de entidades"
 msgid "Entity labels"
 msgstr "Etiquetas de entidades"
 
+#: spacy_streamlit/visualizer.py:83
+msgid "Model"
+msgstr "Modelo"
+
 #: spacy_streamlit/visualizer.py:86
 msgid "Loading model"
 msgstr "Cargando modelo"
@@ -35,6 +39,10 @@ msgstr "Cargando modelo"
 #: spacy_streamlit/visualizer.py:91
 msgid "Pipeline info"
 msgstr "Información de la cadena de procesamiento"
+
+#: spacy_streamlit/visualizer.py:94
+msgid "Download the {} model"
+msgstr "Descarga el modelo {}"
 
 #: spacy_streamlit/visualizer.py:106
 msgid "How to use spacy"

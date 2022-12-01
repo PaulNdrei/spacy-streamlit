@@ -24,6 +24,10 @@ msgstr "Creat amb"
 msgid "Select entity labels"
 msgstr "Selecciona les etiquetes de les entitats"
 
+#: spacy_streamlit/visualizer.py:83
+msgid "Model"
+msgstr "Model"
+
 #: spacy_streamlit/visualizer.py:212
 msgid "Entity labels"
 msgstr "Etiquetes de les entitats"
@@ -35,6 +39,10 @@ msgstr "Carregant el model"
 #: spacy_streamlit/visualizer.py:91
 msgid "Pipeline info"
 msgstr "Informació de la cadena de processament"
+
+#: spacy_streamlit/visualizer.py:94
+msgid "Download the {} model"
+msgstr "Descarrega el model {}"
 
 #: spacy_streamlit/visualizer.py:106
 msgid "How to use spacy"
